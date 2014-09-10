@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Streaming</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>	
+		<script>
+
+		 $(function(){
+			 var socket = io.connect('http://localhost:3000');
+
+		     socket.on('tweet',function(data){		     	
+               $('#lista').append('<li><img src='+data.image+'/><p>+'+data.twet+'</li>');
+		     });
+		      
+
+		    
+		 });
+		</script>
+</head>
+<body>
+
+	<h1> Streaming con Twitter</h1>
+
+
+	<div >
+       <ul id="lista"><ul>
+	</div>
+</boyd>
+</html>
