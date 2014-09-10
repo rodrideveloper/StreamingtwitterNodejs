@@ -6,8 +6,8 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "latest",
-    "jade": "latest",
-    "socket.io":"latest"
+    "express": "*",   
+    "socket.io":"*",
+    "Twit":"*"
   }
 }
